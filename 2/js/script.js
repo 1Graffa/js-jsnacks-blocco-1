@@ -6,7 +6,6 @@ var lista = [];
 var numero;
 var resto = numero / 2;
 // creo la regola 6 numeri + l'inserisci numero con prompt
-
 for (var i=0; i<6; i++){
 numero = prompt("Inserisci numero");
 // se resto diverso da 0 allora metti numero in array
