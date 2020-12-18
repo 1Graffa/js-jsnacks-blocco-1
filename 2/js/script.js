@@ -4,14 +4,11 @@
 // creo array vuoto
 var numeri=[];
 
-// creo la regola + l'inserisci numero con prompt
-for(var i=0; i<6;i++){
-numeri.push(prompt("Inserisci numero"));
-}
-// console.log(numeri);
+// creo la regola 6 numeri + l'inserisci numero con prompt
+for(var i=0; i<6; i++);{
+numeri.push(prompt("Inserisci numero"));{
 
-for(var i=0; i<numeri.length;i++){
-  if(numeri[i]%2 != 0){
+  if(numeri[i]%2 != 0);{
   }
 }
  console.log(numeri);
