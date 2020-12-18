@@ -1,22 +1,19 @@
-//In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby
-//chiedi all’utente il suo nome e comunicagli se può partecipare o no alla festa.
+//L’utente inserisce due parole in successione, con due prompt.
 
-//creo array coi nomi degli invitati
-var lista = ["Aldo", "Giovanni", "Giacomo"];
-var nomeInput = prompt("Inserisci nome");
-//variabile sentinella
-var messaggio = false;
+//Il software stampa prima la parola più corta, poi la parola più lunga.
 
-//diamo il for per ottenre una sola il check del nome
-for (var i = 0; i < lista.length; i++){
-  //se il nome corrusponte ad un nome della lista = true
-  if (nomeInput == lista[i]){
-    messaggio = true;
-  }
-//messaggio 
-}
-if (messaggio){
-  console.log("sei stato invitato");
+//inserisco le mie 2 varibili direttamente con prompt e il valore numeroMaggiore
+var parolaUno = parseInt(prompt("inserisci una parola"));
+var parolaDue = parseInt(prompt("inseriscine un'altra"));
+var parolaPiuLunga;
+var pari = ("Le parole hanno pari lunghezza");
+
+
+if (parolaUno.length > parolaDue.length) {
+  parolaPiuLunga = parolaUno;
+} else if (parolaDue.length > parolaUno.length) {
+  parolaPiuLunga = parolaDue;
 } else {
-  console.log("no, mi dispiace");
+  parolaPiuLunga = pari ;
 }
+console.log(parolaPiuLunga);
